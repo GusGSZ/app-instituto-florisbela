@@ -8,6 +8,7 @@
   --red-primary: #e63946;
   --blue-primary: #1d3557;
   --theme-gray-light: #6b7280;
+  --light-green: #f1faee;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -47,6 +48,7 @@
   --color-foreground: var(--foreground);
   --color-red-primary: var(--red-primary);
   --color-blue-primary: var(--blue-primary);
+  --color-light-green: var(--light-green);
   --color-theme-gray-light: var(--theme-gray-light);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);

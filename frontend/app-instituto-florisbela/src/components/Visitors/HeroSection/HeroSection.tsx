@@ -10,10 +10,7 @@ function HeroSection() {
     <div className="flex flex-row items-center justify-center w-full min-h-[85vh] bg-[linear-gradient(135deg,#F1FAEE_0%,#E2F0CB_100%)]">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="max-w-146">
-          <Badge
-            variant="secondary"
-            className="w-50 h-9.5 py-2 bg-white gap-2.5"
-          >
+          <Badge variant="secondary" className="w-50 h-9.5 bg-white gap-2.5">
             <span className="relative inline-flex h-3 w-3 shrink-0 items-center justify-center">
               <span
                 className="absolute inset-0 z-0 animate-ping rounded-full bg-red-primary/50"
