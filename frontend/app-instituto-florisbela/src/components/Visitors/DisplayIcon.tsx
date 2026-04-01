@@ -18,7 +18,7 @@ function DisplayIcon({ color, icon }: DisplayIconProps) {
   return (
     <div
       className={cn(
-        "flex h-12 w-12 items-center justify-center rounded-full",
+        "flex min-h-12 min-w-12 items-center justify-center rounded-full",
         BG_BY_COLOR[color],
       )}
     >

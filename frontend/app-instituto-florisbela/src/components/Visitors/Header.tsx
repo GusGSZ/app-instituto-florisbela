@@ -48,7 +48,7 @@ function Header() {
             <Button
               variant="link"
               asChild
-              className="hover:text-red-primary text-theme-gray-light"
+              className="hover:text-red-primary text-theme-gray-light cursor-pointer"
             >
               <Link href="/login">
                 <LogIn /> Login
@@ -57,7 +57,7 @@ function Header() {
             <Button
               variant="default"
               className={cn(
-                "rounded-full py-2.5 px-6 w-39.25 h-11",
+                "rounded-full py-2.5 px-6 w-39.25 h-11 cursor-pointer",
                 "bg-red-primary font-bold shadow-lg shadow-red-primary/30",
                 "transition-all transform hover:-translate-y-1",
               )}

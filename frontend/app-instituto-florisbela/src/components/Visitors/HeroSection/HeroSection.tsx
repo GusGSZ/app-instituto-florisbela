@@ -36,6 +36,7 @@ function HeroSection() {
             className={cn(
               "rounded-full py-2.5 px-6 w-53.25 h-15.75 bg-red-primary text-lg font-bold",
               "mt-12 shadow-lg shadow-red-primary/30 transition-all transform hover:-translate-y-1",
+              "cursor-pointer",
             )}
           >
             <Link href="/contact">Agendar Visita</Link>
