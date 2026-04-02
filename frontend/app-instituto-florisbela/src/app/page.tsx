@@ -4,7 +4,7 @@ import DifferentialsSection from "@/components/Visitors/DifferentialsSection/Dif
 import MethodologySection from "@/components/Visitors/MethodologySection/MethodologySection";
 import ClassesSection from "@/components/Visitors/ClassesSection/ClassesSection";
 import ContactUs from "@/components/Visitors/ContactUs";
-import Footer from "@/components/Visitors/Footer";
+import Footer from "@/components/Visitors/Footer/Footer";
 
 export default function Home() {
   return (
