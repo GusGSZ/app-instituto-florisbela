@@ -104,13 +104,6 @@ function MethodologySection() {
               />
             </li>
           </ul>
-          <Button
-            variant="link"
-            className="mt-8 text-red-primary font-nunito text-base font-bold cursor-pointer"
-          >
-            Conheça nosso projeto político pedagógico
-            <ArrowRight width={20} height={20} fontWeight={700} />
-          </Button>
         </div>
       </div>
     </div>

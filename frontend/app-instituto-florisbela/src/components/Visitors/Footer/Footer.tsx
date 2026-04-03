@@ -6,16 +6,18 @@ import Copyright from "./Copyright";
 
 function Footer() {
   return (
-    <div className="mx-auto mb-16 grid max-w-7xl grid-cols-4 gap-12 bg-white px-4 pb-10 pt-20">
-      <SchoolColumn />
+    <div className="bg-white">
+      <div className="mx-auto grid max-w-7xl grid-cols-4 gap-12 bg-white px-4 pb-10 pt-20">
+        <SchoolColumn />
 
-      <LinksColumn />
+        <LinksColumn />
 
-      <ContactColumn />
+        <ContactColumn />
 
-      <OpeningHoursColumn />
+        <OpeningHoursColumn />
 
-      <Copyright />
+        <Copyright />
+      </div>
     </div>
   );
 }

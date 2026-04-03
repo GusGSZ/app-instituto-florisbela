@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { ArrowRight, Circle } from "lucide-react";
-import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import HeroImage from "./HeroImage";
+import BookVisitButton from "@/components/ui/book-visit-button";
 
 function HeroSection() {
   return (
@@ -31,17 +30,15 @@ function HeroSection() {
             descoberta.
           </p>
 
-          <Button
-            variant="default"
-            className={cn(
-              "rounded-full py-2.5 px-6 w-53.25 h-15.75 bg-red-primary text-lg font-bold",
-              "mt-12 shadow-lg shadow-red-primary/30 transition-all transform hover:-translate-y-1",
-              "cursor-pointer",
-            )}
+          <BookVisitButton
+            asChild
+            className="mt-12 h-15.75 w-53.25 items-center gap-2 text-lg"
           >
-            <Link href="/contact">Agendar Visita</Link>
-            <ArrowRight width={20} height={20} fontWeight={700} />
-          </Button>
+            <Link href="/contact">
+              Agendar Visita
+              <ArrowRight width={20} height={20} fontWeight={700} />
+            </Link>
+          </BookVisitButton>
         </div>
         <div>
           <HeroImage />

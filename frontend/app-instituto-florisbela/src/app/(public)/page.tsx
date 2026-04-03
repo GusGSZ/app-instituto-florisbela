@@ -1,12 +1,17 @@
-import React from 'react'
-import Header from '@/components/Visitors/Header'
+import HeroSection from "@/components/Visitors/HeroSection/HeroSection";
+import DifferentialsSection from "@/components/Visitors/DifferentialsSection/DifferentialsSection";
+import MethodologySection from "@/components/Visitors/MethodologySection/MethodologySection";
+import ClassesSection from "@/components/Visitors/ClassesSection/ClassesSection";
+import ContactUs from "@/components/Visitors/ContactUs";
 
-function Home() {
+export default function Home() {
   return (
-    <div>
-        <Header />
-    </div>
-  )
+    <>
+      <HeroSection />
+      <DifferentialsSection />
+      <MethodologySection />
+      <ClassesSection />
+      <ContactUs />
+    </>
+  );
 }
-
-export default Home

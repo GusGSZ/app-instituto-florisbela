@@ -4,7 +4,7 @@ import { LogIn } from "lucide-react";
 import { NavLink } from "@/components/nav-link";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { cn } from "@/lib/utils";
+import BookVisitButton from "@/components/ui/book-visit-button";
 
 function Header() {
   const linkBase = "text-theme-gray-light hover:text-red-primary";
@@ -13,8 +13,14 @@ function Header() {
   return (
     <div className="bg-white font-sans">
       <div className="flex flex-row justify-between items-center max-w-7xl mx-auto px-4">
-        <div>
+        <div className="flex flex-row items-center">
           <Image src="/logo.svg" alt="Logo" width={100} height={100} />
+          <span className="text-xl text-blue-primary font-poppins ml-2 font-bold">
+            Instituto
+          </span>
+          <span className="text-xl text-red-primary font-poppins font-bold">
+            Florisbela
+          </span>
         </div>
         <div className="flex flex-row items-center">
           <div className="flex flex-row items-center gap-8">
@@ -54,16 +60,9 @@ function Header() {
                 <LogIn /> Login
               </Link>
             </Button>
-            <Button
-              variant="default"
-              className={cn(
-                "rounded-full py-2.5 px-6 w-39.25 h-11 cursor-pointer",
-                "bg-red-primary font-bold shadow-lg shadow-red-primary/30",
-                "transition-all transform hover:-translate-y-1",
-              )}
-            >
+            <BookVisitButton asChild className="h-11 w-39.25">
               <Link href="/contact">Agendar Visita</Link>
-            </Button>
+            </BookVisitButton>
           </div>
         </div>
       </div>

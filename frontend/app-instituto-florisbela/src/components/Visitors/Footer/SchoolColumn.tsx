@@ -3,7 +3,7 @@ import InstagramButton from "./InstagramButton";
 
 function SchoolColumn() {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 -mt-3">
       <div className="flex flex-row items-center font-poppins">
         <Image
           src="/logo.svg"

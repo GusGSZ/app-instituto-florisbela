@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import BookVisitButton from "@/components/ui/book-visit-button";
 
 function ContactUs() {
   return (
@@ -26,16 +27,9 @@ function ContactUs() {
           </p>
 
           <div className="flex flex-row gap-4 justify-center">
-            <Button
-              variant="default"
-              className={cn(
-                "rounded-full py-2.5 px-6 w-61.5 h-15.75 cursor-pointer",
-                "bg-red-primary text-lg font-nunito shadow-lg shadow-red-primary/30",
-                "transition-all transform hover:-translate-y-1",
-              )}
-            >
+            <BookVisitButton asChild className="h-15.75 w-61.5 text-lg">
               <Link href="/contact">Agendar Visita Agora</Link>
-            </Button>
+            </BookVisitButton>
 
             <Button
               variant="outline"
@@ -43,9 +37,14 @@ function ContactUs() {
                 "rounded-full py-2.5 px-6 w-61.5 h-15.75 cursor-pointer",
                 "bg-transparent text-lg font-nunito hover:bg-white/10 text-white hover:text-white",
               )}
-              onClick={() => {}}
+              asChild
             >
-              Falar no WhatsApp
+              <Link
+                href="https://wa.me/5531997039871?text=Olá, gostaria de saber mais sobre o Instituto Florisbela."
+                target="_blank"
+              >
+                Falar no WhatsApp
+              </Link>
             </Button>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Shield } from "lucide-react";
+import { Shield, UserStar } from "lucide-react";
 import DifferentialCard from "./DifferentialCard";
 
 function DifferentialsSection() {
@@ -16,14 +16,24 @@ function DifferentialsSection() {
           carinho e os melhores estímulos para cada fase.
         </p>
       </div>
-      <div>
+      <div className="grid grid-cols-3 gap-8">
         <DifferentialCard
-          title="Segurança"
-          description="Nossa equipe está comprometida em criar um ambiente seguro e acolhedor para o seu filho."
+          title="Segurança Total"
+          description="Ambiente monitorado, controle rigoroso de acesso e instalações adaptadas para evitar acidentes."
           icon={<Shield stroke="currentColor" strokeWidth={2} />}
           color="text-red-primary"
           bgColor="bg-white"
           iconHoverBgColor="group-hover:bg-red-primary"
+          iconHoverColor="group-hover:text-white"
+        />
+
+        <DifferentialCard
+          title="Equipe Qualificada"
+          description="Profissionais formados, em constante atualização e apaixonados pela educação infantil."
+          icon={<UserStar stroke="currentColor" strokeWidth={2} />}
+          color="text-slate-400"
+          bgColor="bg-white"
+          iconHoverBgColor="group-hover:bg-slate-400"
           iconHoverColor="group-hover:text-white"
         />
       </div>

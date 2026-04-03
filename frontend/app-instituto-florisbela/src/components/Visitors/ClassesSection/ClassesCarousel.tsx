@@ -42,7 +42,7 @@ export function ClassesCarousel() {
         </div>
 
         {/* Faixa do Embla: viewport + trilha (padrão shadcn) */}
-        <CarouselContent>
+        <CarouselContent className="pb-8 pt-1">
           {CLASSES.map((item) => (
             <CarouselItem
               key={item.id}

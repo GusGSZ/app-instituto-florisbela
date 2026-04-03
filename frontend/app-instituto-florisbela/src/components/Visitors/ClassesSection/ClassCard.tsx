@@ -14,7 +14,7 @@ export function ClassCard({ item, className }: ClassCardProps) {
   return (
     <article
       className={cn(
-        "group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-100/80 bg-white shadow-sm transition-shadow duration-300 hover:shadow-xl",
+        "group flex h-full flex-col rounded-2xl border border-gray-100/80 bg-white shadow-sm transition-shadow duration-300 hover:shadow-xl",
         className,
       )}
     >
@@ -30,7 +30,7 @@ export function ClassCard({ item, className }: ClassCardProps) {
           {item.ageRange}
         </span>
       </div>
-      <div className="flex flex-1 flex-col p-5 md:p-6">
+      <div className="flex flex-1 flex-col p-5 pb-6 md:p-6 md:pb-7">
         <h3 className="font-poppins text-xl font-bold text-blue-primary">
           {item.title}
         </h3>
